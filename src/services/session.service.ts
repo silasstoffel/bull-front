@@ -29,6 +29,10 @@ export class SessionService {
     return true;
   }
 
+  async getActiveSession() {
+
+  }
+
   destroy() {
     this.sessionRepository.delete();
     this.events.emit({ authorized: false, token: null });

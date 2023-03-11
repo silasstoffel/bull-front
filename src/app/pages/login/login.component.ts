@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
           return;
       }
 
-      this.validationMessage = 'An error happens, try again later.!';
+      this.validationMessage = 'An error happened, try again later';
     }
   }
 
