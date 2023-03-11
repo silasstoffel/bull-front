@@ -1,1 +1,25 @@
-<h1>#Login</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+  <div class="col-md-4 offset-md-4 mt-5">
+
+    <div class="mb3" *ngIf="validationMessage">
+      <div class="alert alert-danger" role="alert"> {{validationMessage}}</div>
+    </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com" formControlName="email">
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+      </div>
+
+      <div class="mb-3">
+        <button type="submit" class="btn btn-dark">Login</button>
+      </div>
+
+  </div>
+</form>
+
