@@ -14,6 +14,7 @@ import { AccountBarComponent } from './components/account-bar/account-bar.compon
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { AccountService } from 'src/services/account.service';
 import { AuthHttpInterceptor } from 'src/interceptors/auth-http.interceptos';
+import { LastCoursesComponent } from './components/last-courses/last-courses.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AuthHttpInterceptor } from 'src/interceptors/auth-http.interceptos';
     NavBarComponent,
     LogoutComponent,
     AccountBarComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    LastCoursesComponent
   ],
   imports: [
     BrowserModule,
