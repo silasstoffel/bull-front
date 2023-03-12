@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'portfolio', component: PortfolioComponent, canActivate: [SessionGuardService] },
+  { path: '',   redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent, pathMatch: 'full' }
 ];
 
