@@ -12,7 +12,7 @@ Frontend com a proposta de resolver user story **TORO-001**.
 
 ## Setup
 
-Faça setup do [backend](https://github.com/silasstoffel/bull-back-challenge#bull-back-challenge)
+Faça setup do [backend](https://github.com/silasstoffel/bull-back-challenge#bull-back-challenge), logo após inicie o setup do frontend.
 
 ```shell
 # install dependencies
