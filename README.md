@@ -1,27 +1,65 @@
-# BullFront
+# bull-fronted-challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+Backend technical challenge from toro investimentos
 
-## Development server
+# Requirements
+ - [Node 18.15](https://nodejs.org/en/)
+ - [backend](https://github.com/silasstoffel/bull-back-challenge#bull-back-challenge)
+ - Porta 4200 livre (o backend está liberando cors por segurança apenas para http://localhost:4200)
+## About
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Frontend com a proposta de resolver user story **TORO-001**.
 
-## Code scaffolding
+## Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Faça setup do [backend](https://github.com/silasstoffel/bull-back-challenge#bull-back-challenge)
 
-## Build
+```shell
+# install dependencies
+npm i
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# start app
+npm run start
+```
 
-## Running unit tests
+Para acessar a app use esse link [http://localhost:4200](http://localhost:4200)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Relação de contas para poder testar:
 
-## Running end-to-end tests
+**Senha para acesso todos usuários: 123456**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```json
+[
+	{
+		"email" : "account1@bull.com.br",
+		"blocked" : false,
+		"name" : "Account 1"
+	},
+	{
+		"email" : "account2@bull.com.br",
+		"blocked" : false,
+		"name" : "Account 2"
+	},
+	{
+		"email" : "account3@bull.com.br",
+		"blocked" : false,
+		"name" : "Account 3"
+	},
+	{
+		"email" : "account4@bull.com.br",
+		"blocked" : true,
+		"name" : "Account 4"
+	}
+]
 
-## Further help
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Techs
+
+Essa aplicação foi projetada seguindo alguns princípios e techs como:
+
+- SPA
+- Jwt
+- Components
+- Auth
+- Localstorage
